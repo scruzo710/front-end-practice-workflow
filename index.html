@@ -2,20 +2,110 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>front-end workflow-template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <header class="main-site-header">
+        <div>
+            
+            <h1>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    Beverages
+                </a>
+            </h1>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="navbar-toggler-icon sr-only"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+            </nav>
+            
+        </div>
+        <div class="hero-contact">
+            <ul class="row justify-content-center">
+                <li class="col-4">
+                    <a href="">
+                        <i class="fas fa-phone"></i> (+000) 009 455 4088
+                    </a>
+                </li>
+                <li class="col-4">
+                    <a href="mailto:info@example.com">
+                            <i class="far fa-envelope"></i> info@example.com
+                    </a>
+                </li>
+            </ul>
+        </div>
         
-        <script src="" async defer></script>
-    </body>
+    </header>
+    <section class="hero-banner"><!-- position relative a este mae -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- esto puede ser un div con imagen de fondo en el css, o varios divs con imagenes de contenido html (<img src="">) -->
+                    <!-- ademas un h1, p y button/a -->
+                    <!-- el zoom de la imagen lo hace con css3 transforms/transitions -->
+                </div>
+            </div>
+            <div class="row overlapped-grid"> <!-- position absolute a este row (overlapped-grid), relativo A HERO-BANNER -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+
+    <!-- scripts from bower: jquery tether popper.js bootstrap  -->
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./bower_components/tether/dist/js/tether.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   
+
+    <script src="./assets/scripts/main.js"></script>
+
+
+</body>
+
 </html>

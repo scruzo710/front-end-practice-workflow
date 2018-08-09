@@ -10,7 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.8.4",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0"
   }
 }

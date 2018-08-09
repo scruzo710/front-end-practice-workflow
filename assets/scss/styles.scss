@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+// 1. Vendors' ** Generally used with Angular CLI, change as needed
+@import
+   'vendors/bootstrap',
+   'vendors/fontawesome';
+
+// 2. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/navigation',
+  'layout/sidebar',
+  'layout/grid',
+  'layout/tables',
+  'layout/forms',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/carousel',
+  'components/buttons',
+  'components/dropdowns',
+  'components/image-overlay-blocks',
+  'components/flipbox';
+
+// 6. Page/Module specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default',
+  'themes/admin';

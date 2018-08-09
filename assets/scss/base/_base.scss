@@ -1,0 +1,18 @@
+html, body{
+    font-size: 100%;
+}
+
+.container-fluid {
+    background-color: $dark-blue;
+}
+
+.site-content{
+    // Solo globals del site content y todas las paginas. Nada especifico a ningun componente.
+
+}
+
+iframe, img{
+    max-width: 100%;
+    
+}
+

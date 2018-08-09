@@ -1,0 +1,57 @@
+.carousel {
+    width: 100%;
+    height: calc( 100% - 104px );
+    
+    > a {
+        &.carousel-control-prev {
+
+        }
+        &.carousel-control-next {
+
+        }
+    }
+
+    &.slide {
+
+    }
+    &.fade {
+
+    }
+
+    .carousel-inner{
+        height: 100%;
+    }
+
+    .carousel-item {
+        height: 100%;
+        background-image: url('../images/cato&sergio.jpeg');
+        background-size: cover;
+        background-position: center;
+        
+        
+        
+        
+        &:nth-child(1){
+            background-image: url('../images/cube.jpeg');
+            
+        }
+        &:nth-child(2){
+            background-image: url('../images/skating.jpg');
+            
+            
+        }
+        .d-block{
+            width: 100%;
+            max-height: 100%;
+            
+        }
+        
+            
+        
+        // h1, h2, p
+        &.active {
+            
+        }
+        
+    }
+}
