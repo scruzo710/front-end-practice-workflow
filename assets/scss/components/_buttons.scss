@@ -1,15 +1,29 @@
 .btn {
-    &.transparent {
-        background-color: transparent;
-        border: none;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.4em;
+    transition: all .2s ease-in;
+    &.btn-orange{
+        
+        border-color: $orange;
+        background: $orange;
+        
+        color: $white;
+        &:hover {
+            color: $orange;
+            background: $white;
+        }
     }
 
-    &.brand-primary {
-        
-    }
+
  
 }
 
-.navbar-toggler{
-    border-color: none;
+i{
+    color:#e96147;
+
 }

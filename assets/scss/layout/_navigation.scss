@@ -45,7 +45,7 @@ h1{
         
        
         
-        &.collapse {
+        .collapse {
         // 2
             
         }
@@ -58,7 +58,7 @@ h1{
             background: #e96147;
             border-radius: 10px;
             opacity: 1;
-            left: 0;
+            
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
@@ -69,13 +69,13 @@ h1{
             transition: .25s ease-in-out;
 
 
-            &:nth-child(1){
+            :nth-child(1){
                 top: 0px;
             }
-            &:nth-child(2){
+            :nth-child(2){
                 top: 12px;
             }
-            &:nth-child(3){
+            :nth-child(3){
                 top: 24px;
             }
             
