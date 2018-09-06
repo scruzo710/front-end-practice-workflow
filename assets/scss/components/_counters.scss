@@ -1,0 +1,14 @@
+.counter-section {
+    .counter-box{
+        min-height: 200px;
+        background-color: gray;
+        position: relative;
+        h2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 42px;
+        }
+    }
+}

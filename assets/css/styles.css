@@ -11044,7 +11044,7 @@ body, h1, h2, h3, h4, h5, h6, p, li {
 
 a {
   text-decoration: none;
-  color: #ffff; }
+  color: #fff; }
   a:hover {
     text-decoration: none;
     color: #e96147; }
@@ -11156,85 +11156,107 @@ h1 {
   .btn.btn-orange {
     border-color: #e96147;
     background: #e96147;
-    color: #ffff; }
+    color: #fff; }
     .btn.btn-orange:hover {
       color: #e96147;
-      background: #ffff; }
+      background: #fff; }
 
 i {
   color: #e96147; }
 
-.flipbox-section .flipbox {
-  min-height: 300px;
-  -webkit-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000; }
-  .flipbox-section .flipbox .flipper {
-    position: relative;
-    -webkit-transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 0.6s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 0.6s;
-    -o-transform-style: preserve-3d;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    width: 100%;
-    height: 100%; }
-    .flipbox-section .flipbox .flipper .front,
-    .flipbox-section .flipbox .flipper .back {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
+.flipbox-section {
+  position: relative;
+  background-color: green; }
+  .flipbox-section .col {
+    padding: 0; }
+  .flipbox-section .flipbox {
+    padding: 15px;
+    min-height: 300px;
+    height: 100%;
+    -webkit-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    position: relative; }
+    .flipbox-section .flipbox .flipper {
+      position: relative;
+      -webkit-transition: 0.6s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 0.6s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 0.6s;
+      -o-transform-style: preserve-3d;
+      transition: 0.6s;
+      transform-style: preserve-3d;
       width: 100%;
-      height: 100%;
-      background: url("../images/djsetup.jpg") no-repeat;
-      background-size: cover; }
-    .flipbox-section .flipbox .flipper .front {
-      padding: 20px 40px;
-      z-index: 2; }
-      .flipbox-section .flipbox .flipper .front h2, .flipbox-section .flipbox .flipper .front p {
-        width: 80%;
-        z-index: 3;
-        color: #fff;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%); }
-      .flipbox-section .flipbox .flipper .front h2 {
-        text-transform: uppercase;
-        -webkit-transform: translateX(-50%) translateY(-150%);
-        transform: translateX(-50%) translateY(-150%); }
-      .flipbox-section .flipbox .flipper .front p {
-        font-size: 16px;
-        -webkit-transform: translateX(-50%) translateY(50%);
-        transform: translateX(-50%) translateY(50%); }
-      .flipbox-section .flipbox .flipper .front:after {
-        content: "";
-        display: block;
+      height: 100%; }
+      .flipbox-section .flipbox .flipper .front,
+      .flipbox-section .flipbox .flipper .back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 1; }
-    .flipbox-section .flipbox .flipper .back {
+        background: url("../images/djsetup.jpg") no-repeat;
+        background-color: blue;
+        background-size: cover; }
+      .flipbox-section .flipbox .flipper .front {
+        padding: 20px 40px;
+        z-index: 2; }
+        .flipbox-section .flipbox .flipper .front h2, .flipbox-section .flipbox .flipper .front p {
+          width: 80%;
+          z-index: 3;
+          color: #fff;
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }
+        .flipbox-section .flipbox .flipper .front h2 {
+          text-transform: uppercase;
+          -webkit-transform: translateX(-50%) translateY(-150%);
+          transform: translateX(-50%) translateY(-150%); }
+        .flipbox-section .flipbox .flipper .front p {
+          font-size: 16px;
+          -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%); }
+        .flipbox-section .flipbox .flipper .front:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          z-index: 1; }
+      .flipbox-section .flipbox .flipper .back {
+        background-color: red;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+        .flipbox-section .flipbox .flipper .back button {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+    .flipbox-section .flipbox:hover .flipper {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg); }
-      .flipbox-section .flipbox .flipper .back button {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
-  .flipbox-section .flipbox:hover .flipper {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg); }
+
+.counter-section .counter-box {
+  min-height: 200px;
+  background-color: gray;
+  position: relative; }
+  .counter-section .counter-box h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 42px; }
 
 .hero-banner .hero-background {
   background-image: url("/assets/images/b1.jpg");
@@ -11337,7 +11359,7 @@ i {
             -webkit-transform: scale(1);
             transform: scale(1); }
           .about .round-photos-grid li .circle-item:hover h3 {
-            color: #ffff;
+            color: #fff;
             -webkit-filter: none;
             border: none; }
         .about .round-photos-grid li .circle-item.img-1 {
