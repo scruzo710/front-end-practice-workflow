@@ -11037,7 +11037,7 @@ h1, h2, h3, h4, h5 {
   color: inherit; }
 
 body, h1, h2, h3, h4, h5, h6, p, li {
-  font-family: sans-serif; }
+  font-family: inherit; }
 
 .text-center {
   text-align: center; }
@@ -11366,4 +11366,73 @@ i {
           font-family: 'Open Sans',Arial,sans-serif;
           text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3); }
   .about .about-info {
-    background: none; }
+    background: none;
+    padding: 200px 0 0 0;
+    position: relative; }
+    .about .about-info h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 0 auto;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      right: -60px;
+      position: absolute; }
+      .about .about-info h2 span {
+        color: #e96147;
+        font-weight: bold;
+        font-size: 2em; }
+    .about .about-info .about-description {
+      padding: 190px 0 0 70px;
+      text-justify: newspaper; }
+      .about .about-info .about-description h5 {
+        margin: 2em 0 1.2em;
+        font-size: 1.4em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        display: inline-block; }
+      .about .about-info .about-description p {
+        margin: 0;
+        font-size: 1.15em;
+        color: #999;
+        line-height: 1.7em;
+        padding: 100px 0 0 0;
+        bottom: 10px; }
+        .about .about-info .about-description p:last-child {
+          padding-top: 20px; }
+  .about .img-stack {
+    padding: 200px 0 0 0;
+    position: relative; }
+    .about .img-stack .image-1 {
+      background-image: url("/assets/images/a4.jpg");
+      display: block;
+      width: 45%;
+      height: 45%;
+      background-repeat: no-repeat;
+      margin-top: 13rem;
+      margin-left: 7rem;
+      border: 6px solid #e96147;
+      background-size: cover;
+      border: 7px solid rgba(233, 97, 71, 0.63); }
+    .about .img-stack .image-2 {
+      background-image: url("/assets/images/a3.jpg");
+      width: 50%;
+      position: relative;
+      width: 45%;
+      height: 45%;
+      background-repeat: no-repeat;
+      bottom: 25rem;
+      left: 13rem;
+      margin-left: 7rem;
+      border: 6px solid #e96147;
+      background-size: cover;
+      border: 7px solid rgba(233, 97, 71, 0.63);
+      -webkit-transition: .5s all;
+      transition: .5s all; }
+      .about .img-stack .image-2:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }

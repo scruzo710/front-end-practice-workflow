@@ -131,7 +131,7 @@
 
                             h3 {
                             color: $white;
-                            -webkit-filter:none;
+                            -webkit-filter: none;
                             border: none;
                         }
                     }
@@ -196,8 +196,107 @@
         
         
     }
+    
 
     .about-info{
         background: none;
+        padding: 200px 0 0 0;
+        position: relative;
+
+        h2{
+            color: #000;
+            font-size: 3em;
+            text-transform: capitalize;
+            text-align: center;
+            margin: 0 auto; 
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            right: -60px;
+            position: absolute;
+
+          span{
+            color: $orange;
+            font-weight: bold;
+            font-size: 2em;
+    
+          }  
+        }
+        .about-description{
+            padding: 190px 0 0 70px;
+            text-justify: newspaper;
+            
+            h5{
+                margin: 2em 0 1.2em;
+                font-size: 1.4em;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #000;
+                position: absolute;
+                display: inline-block;
+            }
+            p{
+               
+                margin: 0;
+                font-size: 1.15em;
+                color: #999;
+                line-height: 1.7em;
+                padding: 100px 0 0 0;
+                bottom: 10px;
+
+                &:last-child{
+                    padding-top: 20px;
+                }
+               
+            }
+        }
+        
+        
+    }
+    .img-stack{
+        padding: 200px 0 0 0;
+        position: relative;
+
+        .image-1{
+            background-image: url("/assets/images/a4.jpg");
+            display: block;
+            width: 45%;
+            height: 45%;
+            background-repeat: no-repeat;
+            margin-top: 13rem;
+            margin-left: 7rem;
+            border: 6px solid $orange;
+            background-size: cover;
+            border: 7px solid rgba(233, 97, 71, 0.63);
+
+            
+        }
+        .image-2{
+            background-image: url("/assets/images/a3.jpg");
+            width: 50%;
+            position: relative;
+            width: 45%;
+            height: 45%;
+            background-repeat: no-repeat;
+            bottom: 25rem;
+            left: 13rem;
+            margin-left: 7rem;
+            border: 6px solid $orange;
+            background-size: cover;
+            border: 7px solid rgba(233, 97, 71, 0.63);
+            -webkit-transition: .5s all;
+            -moz-transition: .5s all;
+            transition: .5s all;
+
+            &:hover{
+                transform: scale(1.2);
+                
+
+            }
+
+            
+
+        }
+
     }
 }
