@@ -1,7 +1,15 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+var clean = require('gulp-clean'),
+    imagemin = require ('gulp-imagemin'),
+    concat = require ('gulp-concat'),
+    uglify = require ('gulp-uglify'),
+    rename = require('gulp-rename'),
+    minifyhtml = require ('gulp-minify-html'),
+    autoprefixer = require ('gulp-autoprefixer'),
+    sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+
+
 
 // SCSS compilation
 gulp.task('styles', function() {
@@ -11,9 +19,21 @@ gulp.task('styles', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./assets/css/'))
+        .pipe(gulp.dest('./dist/css/'))
         .pipe(browserSync.stream());
 });
+
+// JS
+gulp.task('scripts', function () {
+    return gulp.src('./assets/scripts/*.js')
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(rename('main.min.js'))
+    .pipe(gulp.dest('./dist/js/'))
+    browserSync.reload();
+});
+
+// Clean
 
 // Live Browser Reload
 gulp.task('serve', ['styles'], function() {
@@ -23,7 +43,7 @@ gulp.task('serve', ['styles'], function() {
         }
     });
     gulp.watch('./assets/scss/**/*.scss',['styles']);
-   //* gulp.watch('./assets/scss/**/*.scss',['styles']);//watch js files live
+    gulp.watch('./assets/scripts/*.js',['scripts']);
     gulp.watch("partials/*.html").on('change', browserSync.reload);
     gulp.watch("templates/*.html").on('change', browserSync.reload);
     gulp.watch("*.html").on('change', browserSync.reload);
