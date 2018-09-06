@@ -96,9 +96,9 @@
                     position: relative;
                     cursor: default;
                     box-shadow: inset 0 0 0 4px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
-                    transition: all 1s ease-in-out;
-                    -webkit-filter: brightness(70%);
-
+                    transition: all .3s ease-in-out;
+                    filter: brightness(85%);
+                    
               
                     
                     h3{
@@ -116,12 +116,12 @@
                         
                         text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
                         text-align: center;
-                        transition: all 1s ease-in-out;
+                        transition: all 3s ease-in-out;
                     }
                     &:hover {
                         box-shadow: inset 0 0 0 18px $orange , 0 1px 2px rgba(0,0,0,0.1);
-                        -webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
-                        -webkit-filter: brightness(100%); 
+                        filter: grayscale; /*sepia, hue-rotate, invert....*/
+                        filter: brightness(100%); 
                         
                         
 
@@ -131,7 +131,7 @@
 
                             h3 {
                             color: $white;
-                            -webkit-filter: none;
+                            filter: none;
                             border: none;
                         }
                     }
