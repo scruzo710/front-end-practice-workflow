@@ -98,7 +98,8 @@
                     box-shadow: inset 0 0 0 4px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
                     transition: all .3s ease-in-out;
                     filter: brightness(85%);
-                    
+                    background-repeat: no-repeat;
+                    background-size: 100%;
               
                     
                     h3{
@@ -122,7 +123,7 @@
                         box-shadow: inset 0 0 0 18px $orange , 0 1px 2px rgba(0,0,0,0.1);
                         filter: grayscale; /*sepia, hue-rotate, invert....*/
                         filter: brightness(100%); 
-                        
+                        background-size: 120%;
                         
 
                         .item-info{
@@ -138,27 +139,23 @@
 
                     &.img-1{
                         background-image: url("/assets/images/a1.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 100%;
+                        
 
                     }
 
                     &.img-2{
                         background-image: url("/assets/images/a2.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 100%;
+                        
                     }
 
                     &.img-3{
                         background-image: url("/assets/images/a3.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 100%;
+                        
                     }
                 
                     &.img-4{
                         background-image: url("/assets/images/a4.jpg");
-                        background-repeat: no-repeat;
-                        background-size: 100%;
+                        
                     }
 
                     .item-info{
@@ -297,6 +294,79 @@
             
 
         }
+        
 
+    }
+    .services{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+        
+        .brnd-img{
+             background-image: url('/assets/images/stat.jpg');
+        
+        }   
+        
+        .counter-boxes{
+            
+            background-color: $orange ;
+            margin: 0;
+            padding-top: 3rem;
+            padding-left: 5rem;
+           
+           
+            &:nth-child(1){
+                margin-bottom: 0;
+                
+               
+            }
+            &:nth-child(2){
+                margin-bottom: 0;
+                
+            }
+           
+        
+            .counter-box{
+                display: inline-block;
+                width: 25%;
+                margin-top: 1rem;
+                background-color: #eee;
+                padding: 4rem 9rem;
+                margin-right: .5rem;
+                margin-bottom: 2rem;
+                position: relative;
+               
+
+                &:nth-child(1){
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+                &:nth-child(2){
+                    margin-bottom: 1rem;
+                }
+                &:nth-child(3){
+                    margin-top: 0;
+                    margin-right: 1rem;
+                }
+                &:nth-child(4){
+                    margin-top:0;
+                }
+                
+                
+
+                .numscroller{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    color: $sparklyorange;
+                   
+                
+                }
+       
+            }
+        }
+        
+        
     }
 }
